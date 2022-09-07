@@ -3,7 +3,18 @@
     justify-content: space-between;
     align-items: center;
 }
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.cursor{
+    cursor: pointer;
+}
 nav{
+    position: sticky;
+    top: 0px;
     width: 100%;
 }
 .container{
@@ -11,33 +22,78 @@ nav{
     margin: 0 auto;
 }
 .Navigationbar {
-    background-color: #f7f7f7;
+    background-color:transparent;
     height: 90px;
     padding: 10px;
+    position: relative;
 }
 .logoImg{
+    z-index: 50;
     width: 250px;
 }
-.listBtnContainer{
-    display: none;
+.listBtnContainerShow{
+    display: block;
+    width: 100%;
+    position: absolute;
+    background-color: #ffff;
+    top: 90px;
+    left: 0;
+    z-index: 40;
+    padding: 30px 40px;
+    transform: translateZ(0);
+    opacity: 1;
+    transition: all 0.6s ease;
 }
-.hamburgerMenuClose div{
-    width: 28px;
-    height: 4px;
-    background-color:#000;
-    margin: 3px;
-    border-radius: 10px;
+.noneDisplay{
+    position: absolute;
+    width: 100%;
+    background-color: #ffff;
+    left: 0;
+    transform: translateZ(200px);
+    transition: all 0.6s ease-in-out;
+    z-index: 40 ;
+    opacity:0;
+    top: 90px;
 }
-.hamburgerMenuOpen:first-child{
-    width: 28px;
-    height: 4px;
-    background-color:#000;
-    border-radius: 10px;
+.unoOrderdList li{
+    list-style: none;
+    padding: 20px 0;
+    border-bottom: 1px #9c9c9c solid;
 }
-.hamburgerMenuOpen:last-child{
-    width: 28px;
-    height: 4px;
-    background-color:#000;
-    border-radius: 10px;
-    transform: rotate(90deg);
+.unoOrderdList li a {
+    color:#616161;
+}
+.loginBtn{
+    color:#1d1d1d;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 20px 0;
+}
+@media (min-width:1200px) {
+    .container{
+        max-width: 1200px;
+    }
+    #id{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        transform: translateZ(0);
+        position: unset;
+        background-color:unset;
+    }
+    .unoOrderdList{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .unoOrderdList li{
+        margin: 0 20px;
+        border-bottom: none;
+    }
+    .loginBtn{
+        margin: 0 20px;
+    }
 }
