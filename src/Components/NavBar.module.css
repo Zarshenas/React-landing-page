@@ -1,0 +1,43 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.Navigationbar {
+    background-color: #f7f7f7;
+    height: 90px;
+    padding: 10px;
+}
+.logoImg{
+    width: 250px;
+}
+.listBtnContainer{
+    display: none;
+}
+.hamburgerMenuClose div{
+    width: 28px;
+    height: 4px;
+    background-color:#000;
+    margin: 3px;
+    border-radius: 10px;
+}
+.hamburgerMenuOpen:first-child{
+    width: 28px;
+    height: 4px;
+    background-color:#000;
+    border-radius: 10px;
+}
+.hamburgerMenuOpen:last-child{
+    width: 28px;
+    height: 4px;
+    background-color:#000;
+    border-radius: 10px;
+    transform: rotate(90deg);
+}
