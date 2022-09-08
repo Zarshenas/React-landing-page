@@ -13,6 +13,7 @@
     cursor: pointer;
 }
 nav{
+    -o-position:-webkit-sticky;
     position: sticky;
     top: 0px;
     width: 100%;
@@ -94,6 +95,7 @@ nav{
         border-bottom: none;
     }
     .loginBtn{
+
         margin: 0 20px;
     }
 }
