@@ -1,101 +1,138 @@
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.flexcolumn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
-.cursor{
-    cursor: pointer;
+.cursor {
+  cursor: pointer;
 }
 nav{
-    -o-position:-webkit-sticky;
-    position: sticky;
-    top: 0px;
-    width: 100%;
+  -o-position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
 }
-.container{
-    width: 100%;
-    margin: 0 auto;
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 .Navigationbar {
-    background-color:transparent;
-    height: 90px;
-    padding: 10px;
-    position: relative;
+  background-color: transparent;
+  height: 70px;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
 }
-.logoImg{
-    z-index: 50;
-    width: 250px;
+.logoImg {
+  z-index: 50;
+  width: 200px;
 }
-.listBtnContainerShow{
-    display: block;
-    width: 100%;
-    position: absolute;
-    background-color: #ffff;
-    top: 90px;
-    left: 0;
-    z-index: 40;
-    padding: 30px 40px;
-    transform: translateZ(0);
-    opacity: 1;
-    transition: all 0.6s ease;
+.listBtnContainerShow {
+  display: block;
+  width: 100%;
+  position: absolute;
+  background-color: #ffff;
+  top: 90px;
+  left: 0;
+  z-index: 40;
+  padding: 30px 40px;
+  transform: translateZ(0);
+  opacity: 1;
+  transition: all 0.6s ease;
 }
-.noneDisplay{
-    position: absolute;
-    width: 100%;
-    background-color: #ffff;
-    left: 0;
-    transform: translateZ(200px);
-    transition: all 0.6s ease-in-out;
-    z-index: 40 ;
-    opacity:0;
-    top: 90px;
+.noneDisplay {
+  position: absolute;
+  width: 100%;
+  background-color: #ffff;
+  left: 0;
+  transform: translateZ(200px);
+  transition: all 0.6s ease-in-out;
+  z-index: 40;
+  opacity: 0;
+  top: 90px;
 }
-.unoOrderdList li{
-    list-style: none;
-    padding: 20px 0;
-    border-bottom: 1px #9c9c9c solid;
+.unoOrderdList li {
+  list-style: none;
+  padding: 20px 0;
+  border-bottom: 1px #9c9c9c solid;
 }
 .unoOrderdList li a {
-    color:#616161;
+  color: #616161;
 }
-.loginBtn{
-    color:#1d1d1d;
-    font-size: 18px;
-    font-weight: 600;
+.loginBtn {
+  color: #1d1d1d;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 20px 0;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  #id {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transform: translateZ(0);
+    position: unset;
+    background-color: unset;
+  }
+  .unoOrderdList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .unoOrderdList li {
+    margin: 0 30px;
+    border-bottom: none;
+  }
+  .loginBtn {
+    margin: 0 0 0 40px;
+  }
+  .btnTheme {
+    border: none;
     display: inline-block;
-    margin: 20px 0;
-}
-@media (min-width:1200px) {
-    .container{
-        max-width: 1200px;
-    }
-    #id{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        opacity: 1;
-        transform: translateZ(0);
-        position: unset;
-        background-color:unset;
-    }
-    .unoOrderdList{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .unoOrderdList li{
-        margin: 0 20px;
-        border-bottom: none;
-    }
-    .loginBtn{
-
-        margin: 0 20px;
-    }
+    color: #2a2833;
+    padding: 18px 40px;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, #ff4eb5, #ffa065);
+    position: relative;
+    z-index: 36;
+  }
+  .btnTheme::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    border-radius: 5px;
+    background-color: #fff;
+    transform: scaleX(1);
+    z-index: 37;
+    transition: all 0.4s ease-in-out;
+  }
+  .btnTheme span {
+    color: #2a2833;
+    position: relative;
+    z-index: 38;
+    font-size: 16px;
+    font-weight: 800;
+    transition: all 0.4s ease-in-out;
+  }
+  .btnTheme:hover span {
+    color: #ffff;
+  }
+  .btnTheme:hover:after {
+    transform: scaleX(0);
+  }
 }

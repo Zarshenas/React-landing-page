@@ -30,13 +30,24 @@ const Hamburger =styled.div`
     
 `
 class NavBar extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props);
         this.state={
             isMenuOpen:false,
         }
     }
     
+    // componentDidMount = () => {
+    //     document.addEventListener('scroll', function() {
+    //         if(window.scrollY >= 30){
+
+    //             console.log(this.myRef);
+    //         }else{
+
+    //         }
+    //     });
+    // }
+
     menueHandler = () => {
         this.setState(prevState => ({
             isMenuOpen : !prevState.isMenuOpen
@@ -44,9 +55,10 @@ class NavBar extends Component {
             console.log(this.state.isMenuOpen)
         })
     }
-    render() {
+    render() {          
         return (
             <nav>
+                <div></div>
                 <div className={`${styles.Navigationbar} ${styles.flex} ${styles.container}`}>
                     <div className={styles.logoContainer}>
                         <img className={`${styles.logoImg} ${styles.cursor}`} src={logo} alt="logo" />
@@ -60,7 +72,7 @@ class NavBar extends Component {
                             <li><a href="# ">App Screenshots</a></li>
                             <li><a href="# ">News</a></li>
                         </ul>
-                        <a href='# ' className={styles.loginBtn}>Login</a>
+                        <a href='# ' onClick={this.mmd} className={`${styles.loginBtn} ${styles.btnTheme}`}><span>Login</span></a>
                     </div>
                     <Hamburger onClick={this.menueHandler} isMenuOpen={this.state.isMenuOpen} >
                             <div></div>
