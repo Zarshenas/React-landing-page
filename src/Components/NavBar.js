@@ -14,7 +14,7 @@ const Hamburger = styled.div`
     background-color: #000;
     margin: 3px;
     border-radius: 10px;
-    transition: all 0.35s ease-in-out;
+    transition: all 0.45s ease-in-out;
     transform-origin: 4px;
     &:nth-child(1) {
       transform: ${(props) =>
@@ -60,64 +60,65 @@ class NavBar extends Component {
   };
   render() {
     return (
-      <nav ref={this.myRef}>
-        <div></div>
-        <div
-          className={`${styles.Navigationbar} ${styles.flex} ${styles.container}`}
-        >
-          <div className={styles.logoContainer}>
-            <img
-              className={`${styles.logoImg} ${styles.cursor}`}
-              src={logo}
-              alt="logo"
-            />
-          </div>
+      <header>
+        <nav ref={this.myRef}>
           <div
-            id={styles.id}
-            className={`${
-              this.state.isMenuOpen
-                ? styles.listBtnContainerShow
-                : styles.noneDisplay
-            } ${styles.flexcolumn}`}
+            className={`${styles.Navigationbar} flex container`}
           >
-            <ul className={`${styles.unoOrderdList} ${styles.flexcolumn}`}>
-              <li>
-                <a href="# ">Home</a>
-              </li>
-              <li>
-                <a href="# ">Features</a>
-              </li>
-              <li>
-                <a href="# ">Video</a>
-              </li>
-              <li>
-                <a href="# ">Pricing</a>
-              </li>
-              <li>
-                <a href="# ">App Screenshots</a>
-              </li>
-              <li>
-                <a href="# ">News</a>
-              </li>
-            </ul>
-            <a
-              href="# "
-              onClick={this.mmd}
-              className={`${styles.loginBtn} ${styles.btnTheme}`}
+            <div className={styles.logoContainer}>
+              <img
+                className={`${styles.logoImg} cursor`}
+                src={logo}
+                alt="logo"
+              />
+            </div>
+            <div
+              id={styles.listBtnContainer}
+              className={`${
+                this.state.isMenuOpen
+                  ? styles.listBtnContainerShow
+                  : styles.noneDisplay
+              } flexcolumn`}
             >
-              <span>Login</span>
-            </a>
+              <ul className={`${styles.unoOrderdList} flexcolumn`}>
+                <li>
+                  <a href="# ">Home</a>
+                </li>
+                <li>
+                  <a href="# ">Features</a>
+                </li>
+                <li>
+                  <a href="# ">Video</a>
+                </li>
+                <li>
+                  <a href="# ">Pricing</a>
+                </li>
+                <li>
+                  <a href="# ">App Screenshots</a>
+                </li>
+                <li>
+                  <a href="# ">News</a>
+                </li>
+              </ul>
+              <a
+                href="# "
+                onClick={this.mmd}
+                className={`${styles.loginBtn} btnTheme`}
+              >
+                <span>Login</span>
+              </a>
+            </div>
+            <Hamburger
+              onClick={this.menueHandler}
+              isMenuOpen={this.state.isMenuOpen}
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </Hamburger>
           </div>
-          <Hamburger
-            onClick={this.menueHandler}
-            isMenuOpen={this.state.isMenuOpen}
-          >
-            <div></div>
-            <div></div>
-            <div></div>
-          </Hamburger>
-        </div>
-      </nav>
+        </nav>
+      </header>
     );
   }
 }

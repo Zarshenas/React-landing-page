@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,4 +9,64 @@ body {
 }
 a {
   text-decoration: none;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.cursor {
+  cursor: pointer;
+}
+.btnTheme {
+  border: none;
+  display: inline-block;
+  color: #2a2833;
+  padding: 18px 40px;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg, #ff4eb5, #ffa065);
+  position: relative;
+  z-index: 36;
+}
+.btnTheme::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border-radius: 5px;
+  background-color: #fff;
+  transform: scaleX(1);
+  z-index: 37;
+  transition: all 0.4s ease-in-out;
+}
+.btnTheme span {
+  color: #2a2833;
+  position: relative;
+  z-index: 38;
+  font-size: 16px;
+  font-weight: 800;
+  transition: all 0.4s ease-in-out;
+}
+.btnTheme:hover span {
+  color: #ffff;
+}
+.btnTheme:hover:after {
+  transform: scaleX(0);
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
