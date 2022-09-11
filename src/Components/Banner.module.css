@@ -1,0 +1,155 @@
+.con{
+    padding: 200px 15px;
+    position: relative;
+}
+#greenBubble{
+    position: absolute;
+    background-image: linear-gradient(40deg,#39aeff,#3cff53);
+    width: 143px;
+    height: 143px;
+    top: -5%;
+    left: 3%;
+    perspective: 150px;
+    border-radius: 50%;
+    z-index: -50;
+    box-shadow: 0 20px 40px 0 rgba(141, 255, 151, 0.8);
+    animation: bubbleMove 12s linear infinite;
+}
+#purpleBubble{
+    display: none;
+}
+#orangeBubble{
+    position: absolute;
+    background-image: linear-gradient(40deg,#ff703e,#ffec4e);
+    box-shadow: 0 20px 40px 0 rgba(253, 255, 141, 0.8);
+    width: 85px;
+    height: 85px;
+    top: 10%;
+    left: 30%;
+    perspective: 85px;
+    border-radius: 50%;
+    z-index: -50;
+    animation: bubbleMove 8s linear infinite;
+}
+#pinkBubble{
+    position: absolute;
+    background-image: linear-gradient(40deg,#ff43c0,#ffa95c);
+    box-shadow: 0 20px 40px 0 rgba(255, 141, 166, 0.8);
+    width: 85px;
+    height: 85px;
+    bottom: 25%;
+    left: 15%;
+    perspective: 85px;
+    border-radius: 50%;
+    z-index: -50;
+    animation: bubbleMove 20s linear infinite;
+}
+.introduceSection{
+    width: 100%;
+    position: relative;
+}
+.introduceTexts{
+    color: #2a2833;
+}
+.introduceTexts h3{
+    font-weight: lighter;
+    font-size: 60px;
+}
+.introduceTexts span{
+    font-weight: 600;
+}
+.introduceTexts p{
+    font-size: 20px;
+    color: #74727a;
+    margin: 25px 0 40px;
+    line-height: 28px;
+    font-weight: 600;
+}
+.introduceTexts a{
+    width: fit-content;
+}
+.introduceImage{
+    display: none;
+    position: relative;
+}
+@media (min-width: 1200px) {
+    .introduceImage{
+        display: block;
+    }
+    #purpleBubble{
+        display: block;
+        position: absolute;
+        background-image: linear-gradient(40deg,#0db8ff,#f332ff);
+        box-shadow: 0 20px 60px 0 rgb(141 142 255 / 80%);
+        width: 85px;
+        height: 85px;
+        top: 12%;
+        right: 10%;
+        perspective: 85px;
+        border-radius: 50%;
+        z-index: -50;
+        animation: bubbleMove 15s linear infinite;
+    }
+    .introduceImage::before{
+        content: "";
+        width: 639px;
+        height: 639px;
+        background-image: linear-gradient(40deg,#ff43c0,#ffa95c);
+        box-shadow: 0 20px 60px 0 #f497becc;
+        border-radius: 50%;
+        position: absolute;
+        top: -14%;
+        left: -24%;
+        animation: bounce 2s alternate cubic-bezier(.5, 0.05, 1, .5) infinite;
+        z-index: -1;
+    }
+    .introduceImage img {
+        animation: float 6s alternate ease infinite;
+    }
+    .introduceTexts h3{
+        font-size: 90px;
+    }
+    .introduceTexts span{
+        font-weight: bold;
+    }
+    @keyframes bounce {
+        from {
+            transform: translate3d(0, 0, 0);
+        }
+        to {
+            transform: translate3d(0, 80px, 0);
+        }
+    }
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-20px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+}
+    @keyframes bubbleMove {
+        0% {
+            transform: translateY(0) translateX(0) rotate(0);
+        }
+        30% {
+            transform: translateY(30px) translateX(75px) rotate(15deg);
+            transform-origin: center center;
+        }
+        50% {
+            transform: translateY(50px) translateX(150px) rotate(45deg);
+            transform-origin: right bottom;
+        }
+        80% {
+            transform: translateY(30px) translateX(75px) rotate(15deg);
+            transform-origin: left top;
+        }
+        100% {
+            transform: translateY(0) translateX(0) rotate(0);
+            transform-origin: center center;
+        }
+    }
