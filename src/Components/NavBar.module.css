@@ -1,8 +1,7 @@
-
 nav{
   top: 0;
   width: 100%;
-  position: relative;
+  position: absolute;
   transition: all 0.9s ease;
   background-color: transparent;
   z-index: 999;
