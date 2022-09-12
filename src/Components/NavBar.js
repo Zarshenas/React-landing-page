@@ -4,6 +4,7 @@ import logo from "../Images/Logo.png";
 import styled from "styled-components";
 
 const Hamburger = styled.div`
+  cursor: pointer;
   z-index: 49;
   @media (min-width: 1200px) {
     display: none;

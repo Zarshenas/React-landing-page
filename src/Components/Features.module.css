@@ -1,0 +1,30 @@
+.feachersSection{
+    text-align: center;
+}
+.feachersSection h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: #2a2833;
+    margin-bottom: 50px;
+}
+.feachersSection h1 span{
+    font-weight: 800;
+}
+.feacherContainer{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(1fr);
+    grid-gap: 20px;
+}
+@media (min-width:768px) and (max-width : 1199px) {
+    .feacherContainer{
+        grid-template-rows: repeat(1fr 1fr);
+        grid-template-columns: repeat(2 , minmax(280px, 1fr));
+    }
+}  
+@media (min-width:1200px) {   
+    .feacherContainer{
+        grid-template-columns: repeat(4 , minmax(250px, 1fr));
+        grid-gap: 30px;
+    }
+}

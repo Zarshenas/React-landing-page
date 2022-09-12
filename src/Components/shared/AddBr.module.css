@@ -1,0 +1,10 @@
+.feacherName{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 800;
+    color: #2a2833;
+    transition: all .4s ease;
+}
+.feacherName:hover{
+    color:#ff17c5;
+}

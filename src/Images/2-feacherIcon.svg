@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 12.5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="104.5" cy="142.5" r="32.5"/>
+  <path id="Ellipse_2_copy" data-name="Ellipse 2 copy" class="cls-2" d="M194,237a9,9,0,1,1-9,9A9,9,0,0,1,194,237Zm222-50a9,9,0,1,1-9,9A9,9,0,0,1,416,187Z"/>
+  <path class="cls-2" d="M194,237a9,9,0,1,1-9,9A9,9,0,0,1,194,237Zm0,0a9,9,0,1,1-9,9A9,9,0,0,1,194,237Z"/>
+  <path class="cls-3" d="M45,431H448"/>
+  <path class="cls-3" d="M75,431V246"/>
+  <path class="cls-3" d="M144,429V210H244s27-3.52,27-35H105s-63,7.531-63,61v70s3.129,26,28,26"/>
+  <path class="cls-3" d="M110,430l-1-104"/>
+  <path class="cls-3" d="M232,303l26-23,18,20,53-55,18,20,44-44"/>
+  <path class="cls-3" d="M193,176V125s-3.8-14,14-14H435s18,2.576,18,19V324s-2.048,21-19,21H209s-17-.059-17-20V275"/>
+  <path class="cls-3" d="M277,108s41.531-90.612,93-1"/>
+  <path id="Line_1" data-name="Line 1" class="cls-3" d="M302,346l-26,85Z"/>
+  <path id="Line_2" data-name="Line 2" class="cls-3" d="M349,346l29,83Z"/>
+</svg>

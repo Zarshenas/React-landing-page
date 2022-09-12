@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+*{
+    font-family: "Rubik", sans-serif;
+}
 .con{
-    padding: 200px 15px;
+    padding: 200px 15px 70px;
     position: relative;
 }
 #greenBubble{
@@ -63,7 +67,7 @@
     color: #74727a;
     margin: 25px 0 40px;
     line-height: 28px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .introduceTexts a{
     width: fit-content;

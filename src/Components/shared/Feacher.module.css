@@ -1,0 +1,9 @@
+.feacherDescription{
+    color: #74727a;
+    font-size: 16px;
+    line-height: 26px;
+}
+.arrow{
+    transform: rotate(180deg);
+    cursor: pointer;
+}
