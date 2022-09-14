@@ -5,6 +5,7 @@ import Banner from './Components/Banner';
 import Test from './Components/test';
 import Features from './Components/Features';
 import Video from './Components/Video';
+import ProvidedTools from './Components/ProvidedTools';
 
 class App extends Component {
   render() {
@@ -14,9 +15,7 @@ class App extends Component {
         <Banner />
         <Features />
         <Video />
-        <Test />
-        <Test />
-        <Test />
+        <ProvidedTools />
       </>
     );
   }
