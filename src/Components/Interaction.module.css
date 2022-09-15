@@ -1,0 +1,66 @@
+.intractionSection{
+    background-color: #fefbf4;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    padding: 100px 10%;
+}
+.intractionImageCon{
+    text-align: center;
+    position: relative;
+}
+.intractionImage{
+    width: 400px;
+    animation: float 6s alternate ease infinite;
+}
+.intractionDescriptionCon h1{
+    margin: 40px 0;
+    font-size: 50px;
+    font-weight: 400;
+    color: #2a2833;
+}
+h1 span{
+    font-weight: 800;
+}
+.intractionDescriptionCon p {
+    color: #74727a;
+    font-size: 18px;
+    line-height: 35px;
+    margin:40px 0;
+}
+.startBtn{
+    padding: 25px 55px;
+}
+@media (min-width:1200px){
+    .container{
+        width: 100%;
+        margin: auto;
+        padding: 100px 18%;
+    }
+    .intractionSection{
+        flex-direction: row-reverse;
+        justify-content: space-between !important;
+        align-items: center;
+    }
+    .intractionImageCon{
+        margin-right: -80px;
+    }
+    .intractionDescriptionCon{
+        margin-right: 40px;
+    }
+    .intractionImage{
+        width: 640px;
+    }
+}
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
