@@ -6,6 +6,7 @@ import Features from './Components/Features';
 import Video from './Components/Video';
 import ProvidedTools from './Components/ProvidedTools';
 import Interaction from './Components/Interaction';
+import PricingPlans from './Components/PricingPlans';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <Video />
         <ProvidedTools />
         <Interaction />
+        <PricingPlans />
       </>
     );
   }
