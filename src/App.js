@@ -15,7 +15,9 @@ class App extends Component {
         <NavBar />
         <Banner />
         <Features />
-        <Video />
+        <React.StrictMode>
+          <Video />
+        </React.StrictMode>
         <ProvidedTools />
         <Interaction />
         <PricingPlans />

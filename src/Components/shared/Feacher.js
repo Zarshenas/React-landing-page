@@ -54,13 +54,12 @@ const FeacherIconCon = styled.div`
 class Feacher extends Component {
     render() {
         const {icon,title,describtion ,shadowColor ,firsgradient ,secondgradient}=this.props;
-        console.log(firsgradient)
         return (
             <FeacherContainer firsgradient={firsgradient} secondgradient={secondgradient}>
                 <FeacherIconCon shadowColor={shadowColor} firsgradient={firsgradient} secondgradient={secondgradient}>
                     <img src={icon} alt="feacherIcon" />
                 </FeacherIconCon>
-                <a href="# " className={styles.feacherName}>{addBrToText(title)}</a>
+                <p href="# " className={styles.feacherName}>{addBrToText(title)}</p>
                 <p className={styles.feacherDescription}>{describtion}</p>
                 <a href="# " className={styles.arrow}><img src={arrow} alt="arrow" /></a>
             </FeacherContainer>

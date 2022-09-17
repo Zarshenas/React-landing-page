@@ -15,29 +15,13 @@
     margin: 40px 0;
     justify-content: center;
 }
-.switch{
-    width: 90px;
-    height: 38px;
-    border: 1px solid #efefef;
-    border-radius: 34px;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.switch::after{
-    content: "";
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    left: 6px;
-    border-radius: 50%;
-    background-image:linear-gradient(40deg,#ff4eb5,#ffa065);;
-}
 .plansSection ul li{
     display: inline-block;
     margin: 0 20px;
     color: #74727a;
     font-size: 18px;
     font-weight: 400;
+}
+.On{
+    color: #2a2833 !important;
 }
