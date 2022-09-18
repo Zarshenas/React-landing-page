@@ -25,3 +25,16 @@
 .On{
     color: #2a2833 !important;
 }
+.plansCon{
+    display: grid;
+    grid-template-columns: repeat(1 ,80%);
+    grid-template-rows: repeat(1fr);
+    grid-gap: 20px;
+    justify-content: center !important;
+}
+@media (min-width:1200px) {   
+    .plansCon{
+        grid-template-columns: repeat(3 , minmax(250px, 1fr));
+        grid-gap: 30px;
+    }
+}

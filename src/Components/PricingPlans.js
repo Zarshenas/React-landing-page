@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './PricingPlans.module.css';
 import styled from 'styled-components';
+import Plan from './shared/Plan';
 
 const Switch = styled.div`
     width: 90px;
@@ -30,6 +31,16 @@ class PricingPlans extends Component {
         this.state = {
             monthly:true,
             yearly:false,
+            plansMonthly:[
+                {planPrice:"$20.00",planType:"BASIC PACK",firstColor:"#ff4eb5",secondColor:"#ffa065"},
+                {planPrice:"$30.00",planType:"MEDIUM PACK",firstColor:"#39aefe",secondColor:"#3cff53"},
+                {planPrice:"$40.00",planType:"PREMIUM PACK",firstColor:"#0db8ff",secondColor:"#f033ff"}
+            ],
+            plansYearly:[
+                {planPrice:"$120.00",planType:"BASIC PACK",firstColor:"#ff4eb5",secondColor:"#ffa065"},
+                {planPrice:"$230.00",planType:"MEDIUM PACK",firstColor:"#39aefe",secondColor:"#3cff53"},
+                {planPrice:"$340.00",planType:"PREMIUM PACK",firstColor:"#0db8ff",secondColor:"#f033ff"}
+            ]
         }
     }
     switchHandler = () =>{
@@ -51,6 +62,13 @@ class PricingPlans extends Component {
                     </li>
                     <li className={this.state.yearly ? styles.On : ""}>Yearly</li>
                 </ul>
+                <div className={styles.plansCon}>
+                {
+                    this.state.monthly?this.state.plansMonthly.map( plan  => <Plan planPrice={plan.planPrice} planType={plan.planType} firstColor={plan.firstColor} secondColor={plan.secondColor}/>)
+                    :
+                    this.state.plansYearly.map( plan  => <Plan planPrice={plan.planPrice} planType={plan.planType} firstColor={plan.firstColor} secondColor={plan.secondColor}/>)
+                    }
+                </div>
             </section>
         );
     }

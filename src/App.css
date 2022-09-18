@@ -76,6 +76,19 @@ a {
 .btnTheme:hover:after {
   transform: scaleX(0);
 }
+.fadeUp{
+  animation: fadeUp 1s both;
+}
+@keyframes fadeUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;

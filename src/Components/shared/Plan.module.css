@@ -1,0 +1,50 @@
+.planContainer{
+    text-align: center;
+}
+.planPrice{
+    color: #ff4eb5 !important;
+    font-size: 60px !important;
+    line-height: 1em !important;
+    font-weight: 400 !important;
+    margin-bottom: 25px !important;
+}
+.type{
+    color: #2a2833;
+    font-size: 14px !important;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    line-height: 1em !important;
+    letter-spacing: 0.2em;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #efefef;
+    margin: 40px auto;
+}
+.planOptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0;
+}
+.planOptions li+li{
+    margin-top: 30px;
+}
+.planOptions li{
+    color: #74727a;
+    font-size: 16px !important;
+    font-weight: 400;
+    line-height: 1em;
+}
+.planContainer p{
+    font-size: 12px !important;
+    color: #74727a;
+    margin-top: 30px;
+}
+@media (min-width:1200px) {   
+    .line{
+        width: 80%;
+    }
+}
