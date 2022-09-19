@@ -1,0 +1,59 @@
+.interpretationsSection{
+    background-color: #fff9ff;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    padding: 50px 10%;
+}
+.interpretationsDescriptionCon h1{
+    margin: 40px 0 0;
+    font-size: 50px;
+    font-weight: 400;
+    color: #2a2833;
+}
+h1 span{
+    font-weight: 800;
+}
+.slides{
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 100px 0 150px;
+}
+.allArrowsCon{
+    margin: 100px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.arrowCon{
+    background-color: #ffff;
+    padding: 16px;
+    border-radius: 50%;
+    margin: 0 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px #ff87eb5e;
+}
+.arrow{
+    font-size: 24px;
+}
+@media (min-width:1200px){
+    slides{
+        margin: 100px 0 0;
+    }
+    .left{
+        position: absolute;
+        top: -280px;
+        left: -40px;
+    }
+    .right{
+        position: absolute;
+        top: -280px;
+        right: 40px;
+    }
+}

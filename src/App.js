@@ -7,6 +7,7 @@ import Video from './Components/Video';
 import ProvidedTools from './Components/ProvidedTools';
 import Interaction from './Components/Interaction';
 import PricingPlans from './Components/PricingPlans';
+import Interpretations from './Components/Interpretations';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
         <ProvidedTools />
         <Interaction />
         <PricingPlans />
+        <Interpretations />
       </>
     );
   }
