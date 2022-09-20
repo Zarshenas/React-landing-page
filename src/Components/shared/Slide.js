@@ -13,6 +13,7 @@ const SlideDiv = styled.div`
     animation: ${(props)=> props.slideNumber=== props.id?"comeOver 1s ease 0s 1 normal forwards":"goBehind 1s ease 0s 1 normal forwards running"};
     @media (min-width:1200px){
         width: 60%;
+        padding: 50px 70px !important;
     }
     @keyframes comeOver {
     0% {

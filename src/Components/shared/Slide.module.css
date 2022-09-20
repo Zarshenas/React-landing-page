@@ -1,28 +1,38 @@
 .slide p{
     color: #74727a;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 30px;
     font-weight: 300;
     margin-bottom: 35px;
+    text-align: justify;
 }
 .slide h3{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
     margin-bottom: 10px;
 }
 .slide h6{
     color: #ff4eb5;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     margin-bottom: 35px;
 }
 .slide img{
-    width: 90px;
+    width: 60px;
     border-radius: 50%;
     user-select: none;
 }
 @media (min-width:1200px){
     .slide p{
         font-size: 24px;
+    }
+    .slide h3{
+        font-size: 24px;
+    }
+    .slide h6{
+        font-size: 18px;
+    }
+    .slide img{
+        width: 90px;
     }
 }
