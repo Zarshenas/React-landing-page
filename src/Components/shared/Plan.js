@@ -15,7 +15,7 @@ const PlanButton = styled.a`
 class Plan extends Component {
     render() {
         return (
-            <div className={`${styles.planContainer} fadeUp`}>
+            <div className={`${styles.planContainer} ${this.props.animation}`}>
                 <h1 className={styles.planPrice}>{this.props.planPrice}</h1>
                 <h3 className={styles.type} >{this.props.planType}</h3>
                 <div className={styles.line}></div>
