@@ -8,6 +8,7 @@ import ProvidedTools from './Components/ProvidedTools';
 import Interaction from './Components/Interaction';
 import PricingPlans from './Components/PricingPlans';
 import Interpretations from './Components/Interpretations';
+import BrandOne from './Components/BrandOne';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
         <Interaction />
         <PricingPlans />
         <Interpretations />
+        <BrandOne />
       </>
     );
   }
