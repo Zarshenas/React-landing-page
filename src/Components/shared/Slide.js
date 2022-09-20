@@ -10,7 +10,7 @@ const SlideDiv = styled.div`
     position: absolute;
     transform: ${(props)=> props.id=== 2 ?"rotate(5deg)":""};
     transform: ${(props)=> props.id=== 1 ?"rotate(10deg)":""};
-    animation: ${(props)=> props.slideNumber=== props.id?"comeOver 0.5s ease 0s 1 normal forwards":"goBehind 0.5s ease 0s 1 normal forwards running"};
+    animation: ${(props)=> props.slideNumber=== props.id?"comeOver 1s ease 0s 1 normal forwards":"goBehind 1s ease 0s 1 normal forwards running"};
     @media (min-width:1200px){
         width: 60%;
     }
@@ -35,14 +35,20 @@ const SlideDiv = styled.div`
 }
     @keyframes goBehind {
     0% {
+        z-index: 4;
         transform: rotate(0deg);
     }
-
+    25% {
+        z-index: 3;
+        transform: rotate(0deg);
+    }
     50% {
+        z-index: 2;
         transform: translateY(200px);
     }
 
     100% {
+        z-index: 1;
         transform: rotate(5deg);
     }
 }

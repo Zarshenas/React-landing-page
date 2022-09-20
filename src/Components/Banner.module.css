@@ -96,8 +96,8 @@
     }
     .introduceImage::before{
         content: "";
-        width: 620px;
-        height: 620px;
+        width: 600px;
+        height: 600px;
         background-image: linear-gradient(40deg,#ff43c0,#ffa95c);
         box-shadow: 0 20px 60px 0 #f497becc;
         border-radius: 50%;
@@ -155,5 +155,10 @@
         100% {
             transform: translateY(0) translateX(0) rotate(0);
             transform-origin: center center;
+        }
+    }
+    @media (min-width: 1400px) {
+        .introduceImage::before{
+            left: -18%;
         }
     }

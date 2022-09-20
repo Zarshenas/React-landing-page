@@ -6,10 +6,10 @@ class Banner extends Component {
     render() {
         return (
             <section className={styles.introduceSection}>
-                <div id={styles.greenBubble}></div>
-                <div id={styles.purpleBubble}></div>
-                <div id={styles.orangeBubble}></div>
-                <div id={styles.pinkBubble}></div>
+                <span id={styles.greenBubble}></span>
+                <span id={styles.purpleBubble}></span>
+                <span id={styles.orangeBubble}></span>
+                <span id={styles.pinkBubble}></span>
                 <div className={`${styles.con} container flex`}>
                     <div className={styles.introduceTexts}>
                         <h3>We Deliver the <br/> <span>Software</span> you <br/> Need.</h3>
