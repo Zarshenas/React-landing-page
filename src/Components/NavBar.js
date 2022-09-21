@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import  ReactDOM  from "react-dom";
 import styles from "./NavBar.module.css";
 import logo from "../Images/Logo.png";
 import styled from "styled-components";
@@ -60,7 +61,8 @@ class NavBar extends Component {
     }));
   };
   render() {
-    return (
+    
+    return ReactDOM.createPortal(
       <header>
         <nav ref={this.myRef}>
           <div
@@ -120,7 +122,7 @@ class NavBar extends Component {
           </div>
         </nav>
       </header>
-    );
+     , document.getElementById("navbar"));
   }
 }
 export default NavBar;
