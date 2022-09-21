@@ -1,0 +1,33 @@
+.projectsContainer{
+    text-align: center;
+    margin-bottom: 150px;
+}
+.projectsContainer h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: #2a2833;
+    margin-bottom: 50px;
+}
+.projectsContainer h1 span{
+    font-weight: 800;
+}
+.projectcontainer{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(1fr);
+    grid-gap: 20px;
+    align-items: center;
+}
+@media (min-width:768px) and (max-width : 1199px) {
+    .projectcontainer{
+        grid-template-rows: repeat(1fr 1fr);
+        grid-template-columns: repeat(2 , minmax(280px, 1fr));
+    }
+}  
+@media (min-width:1200px) {   
+    .projectcontainer{
+        grid-template-columns: repeat(4 , minmax(250px, 1fr));
+        grid-gap: 30px;
+    }
+}

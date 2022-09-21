@@ -1,0 +1,16 @@
+.container{
+    margin: 0 auto;
+}
+.count{
+    color: #2a2833;
+    font-weight: 800;
+    font-size: 40px;
+}
+.name{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 14px;
+    font-weight: 800;
+    color: #74727a;
+    margin-top: 15px;
+}
