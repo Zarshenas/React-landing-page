@@ -26,13 +26,13 @@ const responsiveSettings = [
 class BrandOne extends Component {
     render() {
         return (
-            <section className={`${styles.brandOneSection} container`}>
+            <section className={styles.brandOneSection}>
                 <Slide responsive={responsiveSettings} cssClass={styles.slider} infinite easing='cubic-out' duration={2100} transitionDuration={1700} arrows={false} autoplay={true} canSwipe={false}>
-                    <img draggable={false} className={styles.brandImage} src={brandImage} alt="" />
-                    <img draggable={false} className={styles.brandImage} src={brandImage} alt="" />
-                    <img draggable={false} className={styles.brandImage} src={brandImage} alt="" />
-                    <img draggable={false} className={styles.brandImage} src={brandImage} alt="" />
-                    <img draggable={false} className={styles.brandImage} src={brandImage} alt="" />
+                    <img draggable={false} className={styles.brandImage} src={brandImage} alt="brand" />
+                    <img draggable={false} className={styles.brandImage} src={brandImage} alt="brand" />
+                    <img draggable={false} className={styles.brandImage} src={brandImage} alt="brand" />
+                    <img draggable={false} className={styles.brandImage} src={brandImage} alt="brand" />
+                    <img draggable={false} className={styles.brandImage} src={brandImage} alt="brand" />
                 </Slide>
             </section>
         );

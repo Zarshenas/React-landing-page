@@ -10,6 +10,7 @@ import PricingPlans from './Components/PricingPlans';
 import Interpretations from './Components/Interpretations';
 import BrandOne from './Components/BrandOne';
 import CompletedProjects from './Components/CompletedProjects';
+import AppInterfaces from './Components/AppInterfaces';
 
 class App extends Component {
   render() {
@@ -27,6 +28,7 @@ class App extends Component {
         <Interpretations />
         <BrandOne />
         <CompletedProjects />
+        <AppInterfaces />
       </>
     );
   }
