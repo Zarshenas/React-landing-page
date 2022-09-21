@@ -11,6 +11,7 @@ import Interpretations from './Components/Interpretations';
 import BrandOne from './Components/BrandOne';
 import CompletedProjects from './Components/CompletedProjects';
 import AppInterfaces from './Components/AppInterfaces';
+import FAQ from './Components/Faq';
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
         <BrandOne />
         <CompletedProjects />
         <AppInterfaces />
+        <FAQ />
       </>
     );
   }
