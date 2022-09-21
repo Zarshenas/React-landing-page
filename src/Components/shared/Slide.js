@@ -57,7 +57,6 @@ const SlideDiv = styled.div`
 
 class Slide extends Component {
     render() {
-        console.log(this.props.slideNumber)
         return (
             <SlideDiv className={styles.slide} slideNumber={this.props.slideNumber} id={this.props.id}>
                 <p>{this.props.description}</p>
