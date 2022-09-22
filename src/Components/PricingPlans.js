@@ -19,7 +19,7 @@ const Switch = styled.div`
         height: 26px;
         left: 6px;
         border-radius: 50%;
-        background-image:linear-gradient(40deg,#ff4eb5,#ffa065);
+        background-image:linear-gradient(40deg,#3cff53, #39aeff);
         transform: ${(props)=>props.isMonthly?"translateX(0px)" : "translateX(50px)" };
         transition: transform 0.4s ease-out;
     }
