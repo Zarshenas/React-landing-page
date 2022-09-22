@@ -13,6 +13,7 @@ import CompletedProjects from './Components/CompletedProjects';
 import AppInterfaces from './Components/AppInterfaces';
 import FAQ from './Components/Faq';
 import Subscribe from './Components/Subscribe';
+import Footer from './Components/Footer';
 
 class App extends Component {
   render() {
@@ -33,6 +34,7 @@ class App extends Component {
         <AppInterfaces />
         <FAQ />
         <Subscribe />
+        <Footer />
       </>
     );
   }

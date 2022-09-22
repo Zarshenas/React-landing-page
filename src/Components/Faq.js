@@ -27,7 +27,7 @@ class FAQ extends Component {
         return (
             <section className={`${styles.faqSection} container`}>
                 <h1>Want to <span>Ask Something</span> <br/> From Us?</h1>
-                <Accordion Pre-expanded>
+                <Accordion>
                     {this.state.FAQ.map((item) => (
                         <AccordionItem key={item.id}>
                             <AccordionItemHeading>
