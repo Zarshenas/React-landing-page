@@ -21,7 +21,7 @@ class Features extends Component {
     render() {
         const {feachers} = this.state
         return (
-            <section className={`${styles.feachersSection} container`}>
+            <section id='features' className={`${styles.feachersSection} container`}>
                 <h1>Checkout Our <span>Software</span> <br/> Features Below.</h1>
                 <div className={styles.feacherContainer}>
                     {

@@ -47,7 +47,7 @@ const responsiveSettings = [
 class AppInterfaces extends Component {
     render() {
         return (
-            <section className={styles.appUISection}>
+            <section id='app' className={styles.appUISection}>
                 <h1>Checkout Our App <br/> <span>Interface</span> Screenshots.</h1>
                 <Slide cssClass={styles.slider} responsive={responsiveSettings} slidesToScroll={1} infinite easing='cubic-out' duration={2100} transitionDuration={1700} arrows={false} autoplay={true} canSwipe={true}>
                     <img draggable={false} className={styles.AppUI} src={app01} alt="UIApp" />

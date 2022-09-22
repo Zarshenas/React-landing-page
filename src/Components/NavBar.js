@@ -88,19 +88,19 @@ class NavBar extends Component {
                   <a href="# ">Home</a>
                 </li>
                 <li>
-                  <a href="# ">Features</a>
+                  <a href="#features ">Features</a>
                 </li>
                 <li>
-                  <a href="# ">Video</a>
+                  <a href="#video ">Video</a>
                 </li>
                 <li>
-                  <a href="# ">Pricing</a>
+                  <a href="#pricing ">Pricing</a>
                 </li>
                 <li>
-                  <a href="# ">App Screenshots</a>
+                  <a href="#app ">App Screenshots</a>
                 </li>
                 <li>
-                  <a href="# ">News</a>
+                  <a href="#subscribe ">Subscribe</a>
                 </li>
               </ul>
               <a

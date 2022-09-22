@@ -6,7 +6,7 @@ import styles from "./Subscribe.module.css";
 class Subscribe extends Component {
   render() {
     return (
-      <section className={styles.subSection}>
+      <section id="subscribe" className={styles.subSection}>
         <h1>
           Subscribe Our <span>Newsletter</span> <br /> to Get New Updates.
         </h1>

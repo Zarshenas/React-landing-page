@@ -19,7 +19,7 @@ class Video extends Component {
         }
     render() {
         return (
-                <section className={`${styles.videoSection} container flexcolumn`}>
+                <section id='video' className={`${styles.videoSection} container flexcolumn`}>
                     <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='eBGIQ7ZuuiU' h1="dadadada" onClose={() => this.setState({isOpen: false})} />
                 <div className={styles.videoContainer}>
                         <div className={styles.titlecon} >
