@@ -14,12 +14,14 @@ import AppInterfaces from './Components/AppInterfaces';
 import FAQ from './Components/Faq';
 import Subscribe from './Components/Subscribe';
 import Footer from './Components/Footer';
+import ScrollToTop from './Components/scrollToTop';
 
 class App extends Component {
   render() {
     return (
       <>
         <NavBar />
+        <ScrollToTop />
         <Banner />
         <Features />
         <React.StrictMode>

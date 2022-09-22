@@ -49,7 +49,7 @@ class NavBar extends Component {
     if (window.scrollY >= 80) {
       this.myRef.current.className = `${styles.stickyNav}`;
       if (window.scrollY >= 90) {
-        this.myRef.current.className = `${styles.stickyNav} ${styles.soft}`;
+        this.myRef.current.className = `${styles.stickyNav}`;
       }
     } else {
       this.myRef.current.className = "";
