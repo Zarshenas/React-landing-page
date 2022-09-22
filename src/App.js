@@ -12,6 +12,7 @@ import BrandOne from './Components/BrandOne';
 import CompletedProjects from './Components/CompletedProjects';
 import AppInterfaces from './Components/AppInterfaces';
 import FAQ from './Components/Faq';
+import Subscribe from './Components/Subscribe';
 
 class App extends Component {
   render() {
@@ -31,6 +32,7 @@ class App extends Component {
         <CompletedProjects />
         <AppInterfaces />
         <FAQ />
+        <Subscribe />
       </>
     );
   }
