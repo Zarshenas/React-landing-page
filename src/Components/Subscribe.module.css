@@ -16,7 +16,7 @@
 }
 .inputContainer{
     background-color: #ffff;
-    width: 30%;
+    width: 80%;
     margin: 0 auto;
     text-align: left;
     display: flex;
@@ -49,4 +49,9 @@
 }
 .inputContainer button:hover{
     background-position: 100%;
+}
+@media (min-width:1200px) {
+    .inputContainer{
+        width: 40%;
+    }
 }

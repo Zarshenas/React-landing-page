@@ -11,7 +11,7 @@ class Subscribe extends Component {
           Subscribe Our <span>Newsletter</span> <br /> to Get New Updates.
         </h1>
         <form action="#" className={styles.inputContainer}>
-          <input type="email" />
+          <input type="email"/ >
           <button type="submit">
           <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
           </button>
