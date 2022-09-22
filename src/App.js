@@ -15,6 +15,7 @@ import FAQ from './Components/Faq';
 import Subscribe from './Components/Subscribe';
 import Footer from './Components/Footer';
 import ScrollToTop from './Components/scrollToTop';
+import Creator from './Components/Creator';
 
 class App extends Component {
   render() {
@@ -37,6 +38,7 @@ class App extends Component {
         <FAQ />
         <Subscribe />
         <Footer />
+        <Creator />
       </>
     );
   }

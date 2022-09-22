@@ -14,7 +14,7 @@
     opacity: 1 !important;
 }
 .icon{
-    background-image: linear-gradient(90deg,#ff4eb5 0,#ffa065 51%,#ff4eb5);
+    background-image: linear-gradient(90deg,#3cff53 0,#39aeff 50%,#3cff53);
     background-size: 200% auto;
     border-radius: 50%;
     transition: all 0.3s ease-in;

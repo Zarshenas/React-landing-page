@@ -1,0 +1,26 @@
+.creatorCon{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #e2ffe3;
+}
+.creatorCon h6{
+    color:#a8a7a7;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.creatorCon h6 span{
+    color: #0db8ff;
+    font-size: 14px;
+    font-weight: 800;
+}
+@media (min-width:768px) {
+    .creatorCon h6{
+        font-size: 16px;
+
+    }
+    .creatorCon h6 span{
+        font-size: 18px;
+    }
+}
