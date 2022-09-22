@@ -8,8 +8,8 @@
     padding: 50px 10%;
 }
 .interpretationsDescriptionCon h1{
+    font-size: 28px;
     margin: 40px 0 0;
-    font-size: 50px;
     font-weight: 400;
     color: #2a2833;
 }
@@ -18,11 +18,11 @@ h1 span{
 }
 .slides{
     position: relative;
-    height: 400px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-self: center;
-    margin: 100px 0 150px;
+    margin: 100px 0 0px;
 }
 .allArrowsCon{
     margin: 100px 0 0;
@@ -41,6 +41,15 @@ h1 span{
 }
 .arrow{
     font-size: 24px;
+}
+@media (min-width:767px){
+    .interpretationsDescriptionCon h1{
+        font-size: 40px;
+    }
+    .slides{
+        height: 400px;
+        margin: 100px 0 150px;
+    }
 }
 @media (min-width:1200px){
     slides{

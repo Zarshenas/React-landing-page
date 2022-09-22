@@ -6,22 +6,12 @@
     position: relative;
 }
 .toolsImage{
-    width: 400px;
+    width: 200px;
     animation: float 6s alternate ease infinite;
 }
-.toolsImageCon::before{
-    content: "";
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    top: -15%;
-    left: -8%;
-    background-color: #f6fff7;
-}
 .toolsDescriptionCon h1{
+    font-size: 28px;
     margin: 0 0 40px;
-    font-size: 40px;
     font-weight: 400;
     color: #2a2833;
 }
@@ -50,11 +40,29 @@ h1 span{
 .startBtn{
     padding: 25px 55px;
 }
+@media (min-width:600px){
+    .toolsImage{
+        width: 300px;
+    }
+    .toolsDescriptionCon h1{
+        font-size: 40px;
+    }
+}
 @media (min-width:1200px){
     .toolsSection{
         flex-direction: row;
         justify-content: space-between !important;
         align-items: center;
+    }
+    .toolsImageCon::before{
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        top: -15%;
+        left: -8%;
+        background-color: #f6fff7;
     }
     .toolsImageCon{
         margin-left: -60px;

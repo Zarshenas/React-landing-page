@@ -3,7 +3,7 @@
     text-align: center;
 }
 .plansSection h1{
-    font-size: 50px;
+    font-size: 28px;
     font-weight: 400;
     color: #2a2833;
 }
@@ -31,6 +31,11 @@
     grid-template-rows: repeat(1fr);
     grid-gap: 20px;
     justify-content: center !important;
+}
+@media (min-width:768px) {   
+    .plansSection h1{
+        font-size: 40px;
+    }
 }
 @media (min-width:1200px) {   
     .plansCon{

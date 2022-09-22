@@ -4,7 +4,7 @@
     right: 20px;
     opacity: 0;
     transition: all 0.5s ease;
-    z-index: 1000 !important;
+    z-index: 998 !important;
 }
 .show{
     position: fixed;
@@ -22,7 +22,7 @@
     font-size: 20px;
     padding: 15px 18px;
     color: #ffff;
-    z-index: 1200 !important;
+    z-index: 998 !important;
 }
 .icon:hover{
     background-position: 100%;

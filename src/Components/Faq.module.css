@@ -3,11 +3,16 @@
     padding: 200px 0 100px;
 }
 .faqSection h1{
-    font-size: 50px;
+    font-size: 28px;
     font-weight: 400;
     color: #2a2833;
     margin-bottom: 50px;
 }
 .faqSection h1 span{
     font-weight: 800;
+}
+@media (min-width:768px){
+    .faqSection h1{
+        font-size: 40px;
+    }
 }

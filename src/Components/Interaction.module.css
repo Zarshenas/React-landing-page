@@ -11,12 +11,12 @@
     position: relative;
 }
 .intractionImage{
-    width: 400px;
+    width: 200px;
     animation: float 6s alternate ease infinite;
 }
 .intractionDescriptionCon h1{
     margin: 40px 0;
-    font-size: 50px;
+    font-size: 28px;
     font-weight: 400;
     color: #2a2833;
 }
@@ -31,6 +31,14 @@ h1 span{
 }
 .startBtn{
     padding: 25px 55px;
+}
+@media (min-width:600px){
+    .intractionDescriptionCon h1{
+        font-size: 40px;
+    }
+    .intractionImage{
+        width: 300px;
+    }
 }
 @media (min-width:1200px){
     .container{

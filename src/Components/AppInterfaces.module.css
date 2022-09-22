@@ -5,21 +5,9 @@
     text-align: center;
     position: relative;
 }
-.appUISection::before{
-    content: "";
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    margin-left: -221px;
-    width: 423px;
-    height: calc(739px + 50px);
-    background-image: url(../Images/Phone.png);
-    background-repeat: no-repeat;
-    user-select: none;
-    z-index: -2;
-}
+
 .appUISection h1{
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 400;
     color: #2a2833;
 }
@@ -34,12 +22,40 @@
 .slider div{
     text-align: center;
 }
+@media (min-width: 768px){
+    .appUISection h1{
+        font-size: 40px;
+    }
+    .appUISection::before{
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        margin-left: -221px;
+        width: 423px;
+        height: calc(739px + 50px);
+        background-image: url(../Images/Phone.png);
+        background-repeat: no-repeat;
+        user-select: none;
+        z-index: -2;
+    }
+}
 @media (min-width: 1200px) {
     .appUISection h1{
         font-size: 50px;
     }
     .appUISection::before{
+        content: "";
+        position: absolute;
         top: 100px;
+        left: 50%;
+        margin-left: -221px;
+        width: 423px;
+        height: calc(739px + 50px);
+        background-image: url(../Images/Phone.png);
+        background-repeat: no-repeat;
+        user-select: none;
+        z-index: -2;
     }
     .AppUI{
         margin-top: 100px;

@@ -4,13 +4,16 @@ import styled from 'styled-components';
 const SlideDiv = styled.div`
     width: 100%;
     background-color: #ffff;
-    padding: 50px 15px;
+    padding: 20px 5px;
     border-radius: 10px;
     border:2px solid #ff4eb5;
     position: absolute;
     transform: ${(props)=> props.id=== 2 ?"rotate(5deg)":""};
     transform: ${(props)=> props.id=== 1 ?"rotate(10deg)":""};
     animation: ${(props)=> props.slideNumber=== props.id?"comeOver 1s ease 0s 1 normal forwards":"goBehind 1s ease 0s 1 normal forwards running"};
+    @media (min-width:768px){
+        padding: 50px 15px;
+    }
     @media (min-width:1200px){
         width: 60%;
         padding: 50px 70px !important;
