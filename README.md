@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+<a id="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
 
-## Available Scripts
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Siza36/React-landing-page">
+    <img src="./readme files/Pro sefid.png" alt="Logo" width="80" height="80">
+  </a>
 
-### `npm test`
+<h3 id="about-the-project" align="center">React landing page</h3>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <p align="center">
+    Beautiful landing page using React.Js with beautiful UI
+    <br />
+    <a href="https://github.com/Siza36/React-landing-page/issues">Report Bug</a>
+    ·
+    <a href="#contributing">Request Feature</a>
+  </p>
+</div>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#project-set-up">Project Set Up</a>
+    </li>
+    <li>
+      <a href="#faq">FAQ</a>
+      <ul>
+        <li><a href="#how-do-i-fork-this-repository">How do I fork this repository?</a></li>
+        <li><a href="#how-do-i-rename-the-forked-repository">How do I rename the forked repository?</a></li>
+        <li><a href="#how-do-i-run-the-project-locally">How do I run the project locally?</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#contributing">Contributing</a>
+      </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ol>
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- PROJECT VIEW -->
+## The Project View
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Product Name Screen Shot][product-screenshot]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Built With
 
-### Code Splitting
+* [![React Js][react]][react-url]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<!-- Project Set Up -->
+## Project Set Up
+1. Fork the repository to make it yours.
+2. Rename the forked repository to `username.github.io`, where `username` is your GitHub username.
+3. That's it! Navigate to `username.github.io` to see your website :) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If this is your first time making a website and is having trouble getting started, that's ok. Head over to the [FAQ](#faq) section and let me try help you.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+<!-- CONTRIBUTING -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## FAQ
+* [How do I fork this repository?](#how-do-i-fork-this-repository)
+* [How do I rename the forked repository?](#how-do-i-rename-the-forked-repository)
+* [How do I run the project locally?](#how-do-i-run-the-project-locally)
 
-### `npm run build` fails to minify
+### How do I fork this repository?
+1. Make sure you're logged into GitHub with your account
+2. Click the Fork button on the upper right-hand side of this page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### How do I rename the forked repository?
+1. Navigate to the main page of the repository. It should be `https://github.com/username/React-landing-page/`, where `username` is your GitHub username
+2. Click Settings
+3. Under the Repository name heading, type `new repo name` then click Rename
+
+### How do I run the project locally?
+1. Open your terminal and then type `$git clone [repository-URL]`.
+2. cd into the new folder and type `$npm install` This installs the required dependencies.
+3. To run the React project `$npm start`.
+
+## Contributing
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue.
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+## Bugs and Issues
+Have a bug or an issue with this project? [Open a new issue][issues-url]
+
+<!-- CONTACT -->
+## Contact
+
+Siavash - [@instagram](https://instagram.com/thiisiza) - ali.zarshenas.2018@gmail.com
+
+Project Link: [https://github.com/Siza36/React-landing-page](https://github.com/Siza36/React-landing-page)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/Siza36/React-landing-page.svg?style=for-the-badge
+[contributors-url]: https://github.com/Siza36/React-landing-page/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Siza36/React-landing-page.svg?style=for-the-badge
+[forks-url]: https://github.com/Siza36/React-landing-page/network/members
+[stars-shield]: https://img.shields.io/github/stars/Siza36/React-landing-page.svg?style=for-the-badge
+[stars-url]: https://github.com/Siza36/React-landing-page/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Siza36/React-landing-page.svg?style=for-the-badge
+[issues-url]: https://github.com/Siza36/React-landing-page/issues
+[react]: https://img.shields.io/badge/react-61DBFB?style=for-the-badge&logo=react&logoColor=white
+[react-url]: https://reactjs.org/
+<!-- [product-screenshot]:  -->
