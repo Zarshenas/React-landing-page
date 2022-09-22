@@ -8,7 +8,6 @@
     padding: 32px;
     position: relative;
     background-color: #ffffff;
-    box-shadow: 0 5px 15px 0 rgba(58, 212, 173, 0.212);
 }
 .accordion__item::after{
     content: "";
@@ -25,6 +24,7 @@
 }
 .accordion__item:hover::after{
     opacity: 1;
+    box-shadow: 0 5px 15px 0 rgba(58, 212, 173, 0.212);
 }
 .accordion__button {
     background-color: #ffffff;
