@@ -14,7 +14,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Siza36/React-landing-page">
-    <img src="./readme files/Pro sefid.png" alt="Logo" width="80" height="80">
+    <img src="./src/Images/Pro sefid.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 id="about-the-project" align="center">React landing page</h3>
@@ -146,4 +146,4 @@ Project Link: [https://github.com/Siza36/React-landing-page](https://github.com/
 [issues-url]: https://github.com/Siza36/React-landing-page/issues
 [react]: https://img.shields.io/badge/react-61DBFB?style=for-the-badge&logo=react&logoColor=white
 [react-url]: https://reactjs.org/
-<!-- [product-screenshot]:  -->
+[product-screenshot]: https://github.com/Siza36/React-landing-page/blob/main/src/Images/screenshot.png?raw=true
