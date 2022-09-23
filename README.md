@@ -37,6 +37,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#live-demo">Live Demo</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -70,6 +71,8 @@
 
 
 
+## Live Demo
+* <a href="https://react-landing-page-siza.vercel.app/">See the Demo here</a>
 
 ### Built With
 
