@@ -61,9 +61,13 @@ nav{
 }
 .unoOrderdList li a {
   color: #616161;
+  transition:all 0.5s ease;
+}
+.unoOrderdList li a:hover {
+  color: #000000;
 }
 .loginBtn {
-  color: #1d1d1d;
+  color: #333333;
   font-size: 18px;
   font-weight: 800;
   display: inline-block;
