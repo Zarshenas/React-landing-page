@@ -20,7 +20,7 @@
 <h3 id="about-the-project" align="center">React landing page</h3>
 
   <p align="center">
-    Beautiful landing page using React.Js with beautiful UI
+    Beautiful landing page using React.Js with beautiful UI . I used <strong > Mobile First Design <strong /> in this project.
     <br />
     <a href="https://github.com/Siza36/React-landing-page/issues">Report Bug</a>
     ·
